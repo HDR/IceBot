@@ -56,9 +56,8 @@ for _ in range(10): # # title may be empty initially, try several times
 else:
     print("Error: No Title")
 
-
-
 client = discord.Client()
+
 
 @client.event
 async def on_ready():
@@ -68,11 +67,12 @@ async def on_ready():
     print('https://github.com/MrHDR/IceBot')
     print('Logged in as', client.user.name)
     print('===========================================')
-    print()
+    print("")
     Vchannel = client.get_channel(Vc)
     Tchannel = client.get_channel(Tc)
     await client.join_voice_channel(Vchannel)
     await client.edit_channel(Tchannel, topic=nowPlaying)
+
 
 @client.event
 async def on_message(message):
@@ -86,6 +86,5 @@ async def on_message(message):
 
     elif message.content.startswith(pfx + 'stream'):
         await client.send_message(message.channel, 'Debug')
-
 
 client.run(token)
