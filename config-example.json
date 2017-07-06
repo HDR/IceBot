@@ -1,0 +1,7 @@
+{
+  "Token": "Discord Bot Token",
+  "Prefix": "Prefix the bot should use",
+  "VChannel": "ID of the voice channel you want the bot to play music in",
+  "TChannel": "ID of the text channel you want the bot to use",
+  "streamurl": "IceCast URL"
+}
