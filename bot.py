@@ -30,7 +30,7 @@ Tc = (config['TChannel'])
 if Tc == '':
     print("No text channel set, channel editing disabled")
 
-streamurl = (config['Stream'])
+streamurl = (config['streamurl'])
 if streamurl == '':
     sys.exit('No Stream provided')
 
