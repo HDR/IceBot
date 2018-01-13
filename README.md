@@ -7,6 +7,7 @@ sudo apt-get update
 sudo apt install python3 & python3-pip
 sudo apt install ffmpeg
 pip3 install discord
+pip3 install PyNaCl
 ```
 
 ## Requirements
